@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Web Compatibility checker",
+  "description":"this checks the wagac Compatibility of a site",
+  "version": "1.0",
+
+
+  "browser_action":{
+
+},
+
+"content_scripts": [
+  {
+    "run_at": "document_end",
+    "matches": ["http://*/*","https://*/*"],
+    "js": ["jquery.3.3.1.js","app.js"]
+  }
+],
+
+"background" : {
+    "scripts": ["jquery.3.3.1.js"],
+    "persistent": false
+},
+
+  "permissions":[
+    "active_tab",
+    "all_urls"
+]
+
+  }
