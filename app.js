@@ -10,7 +10,6 @@ var img = $("img");
 
 
 $(document).ready(function() {
-    alert("Ready!");
 
 //CHECK FOR ALT TEXT
     if($("header:has(alt)")){
